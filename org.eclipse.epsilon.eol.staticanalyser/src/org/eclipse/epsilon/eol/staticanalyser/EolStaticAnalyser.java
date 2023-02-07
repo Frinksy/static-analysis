@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-import org.eclipse.epsilon.common.dt.editor.AbstractModuleEditor;
 import org.eclipse.epsilon.common.module.IModule;
 import org.eclipse.epsilon.common.module.IModuleValidator;
 import org.eclipse.epsilon.common.module.ModuleElement;
@@ -1340,7 +1339,7 @@ public class EolStaticAnalyser implements IModuleValidator, IEolVisitor {
 
 	@Override
 	public String getMarkerType() {
-		return AbstractModuleEditor.PROBLEM_MARKER;
+		return "EOLPROBLEM"; 
 	}
 
 	public void createTypeCompatibilityWarning(Expression requiredExpression, Expression providedExpression) {
