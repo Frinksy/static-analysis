@@ -4,6 +4,44 @@
   <artifactId>org.eclipse.epsilon.eol.staticanalyser.tests</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>org.eclipse.epsilon.eol.staticanalyser.tests</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.epsilon.eol.staticanalyser</groupId>
+      <artifactId>org.eclipse.epsilon.eol.staticanalyser</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.epsilon</groupId>
+        <artifactId>org.eclipse.epsilon.emc.emf</artifactId>
+        <version>2.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.epsilon</groupId>
+        <artifactId>org.eclipse.epsilon.flexmi</artifactId>
+        <version>2.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.emf</groupId>
+        <artifactId>org.eclipse.emf.ecore</artifactId>
+        <version>2.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.emfatic</groupId>
+        <artifactId>org.eclipse.emfatic.core</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.lsp4j</groupId>
+        <artifactId>org.eclipse.lsp4j</artifactId>
+        <version>0.17.0</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+    </dependency>
+  </dependencies>
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
