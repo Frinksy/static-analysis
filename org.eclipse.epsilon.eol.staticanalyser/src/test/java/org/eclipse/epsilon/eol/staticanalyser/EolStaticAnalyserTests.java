@@ -1,4 +1,4 @@
-package org.eclipse.epsilon.eol.staticanalyser.tests;
+package org.eclipse.epsilon.eol.staticanalyser;
 
 import static org.junit.Assert.assertEquals;
 
