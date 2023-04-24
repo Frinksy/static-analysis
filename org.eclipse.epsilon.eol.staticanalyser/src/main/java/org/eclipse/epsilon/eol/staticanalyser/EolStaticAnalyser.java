@@ -1262,9 +1262,10 @@ public class EolStaticAnalyser implements IModuleValidator, IEolVisitor {
 	//	context = new EolStaticAnalysisContext();
 		if (context.getModelFactory() == null)
 			context.setModelFactory(new ModelTypeExtensionFactory());
-
-		for (ModelDeclaration modelDeclaration : module.getDeclaredModelDeclarations()) {
-			modelDeclaration.accept(this);
+		if (module.getDeclaredModelDeclarations() != null) {
+			for (ModelDeclaration modelDeclaration : module.getDeclaredModelDeclarations()) {
+				modelDeclaration.accept(this);
+			}
 		}
 		
 		context.setModelDeclarations(module.getDeclaredModelDeclarations());
